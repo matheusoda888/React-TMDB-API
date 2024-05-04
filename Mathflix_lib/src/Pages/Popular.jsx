@@ -5,7 +5,7 @@ const moviesURL = import.meta.env.VITE_API
 
 const apiKey = import.meta.env.VITE_API_KEY
 
-const Home = () => {
+const Popular = () => {
 
   const [topMovies, setTopMovies] = useState([])
 
@@ -26,7 +26,7 @@ const Home = () => {
   }
 
   useEffect(()=>{
-    const topRatedUrl = `${moviesURL}top_rated?${apiKey}`
+    const topRatedUrl = `${moviesURL}now_playing?${apiKey}`
 
     getTopRatedMovies(topRatedUrl)
   },[])
@@ -42,4 +42,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Popular

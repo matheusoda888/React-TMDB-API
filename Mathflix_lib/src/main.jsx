@@ -6,7 +6,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './Pages/Home'
 import Search from './Pages/Search'
 import Movie from './Pages/Movie'
-
+import Popular from './Pages/Popular'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/' element={<Home/>} />
           <Route path='/movie/:id' element={<Movie/>} />
           <Route path='/search' element={<Search/>} />
+          <Route path='/popular' element={<Popular/>} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -19,7 +19,12 @@ const Navbar = () => {
   return (
     <nav id="navbar">
         <h2>
-          <Link to='/'><BiCameraMovie/>Movies Lib</Link>
+          <Link to='/'><BiCameraMovie/>Melhores filmes</Link>
+          
+        </h2>
+        <h2>
+          <Link to='/popular'><BiCameraMovie/>Filmes em exibição</Link>
+          
         </h2>
 
 

@@ -67,6 +67,14 @@ const Movie = () => {
         {movie.overview}
       </p>
     </div>
+    <div className="info description">
+      <h3>
+        <BsFillFileEarmarkTextFill/> Data de lançamento: 
+      </h3>
+      <p>
+        {movie.release_date}
+      </p>
+    </div>
     </>}</div>
   )
 }
