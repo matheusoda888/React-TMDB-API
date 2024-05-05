@@ -7,6 +7,8 @@ import Home from './Pages/Home'
 import Search from './Pages/Search'
 import Movie from './Pages/Movie'
 import Popular from './Pages/Popular'
+import Breve from './Pages/Breve'
+import Exibindo from './Pages/Exibindo'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,6 +20,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/movie/:id' element={<Movie/>} />
           <Route path='/search' element={<Search/>} />
           <Route path='/popular' element={<Popular/>} />
+          <Route path='/exibindo' element={<Exibindo/>} />
+          <Route path='/breve' element={<Breve/>} />
         </Route>
       </Routes>
     </BrowserRouter>

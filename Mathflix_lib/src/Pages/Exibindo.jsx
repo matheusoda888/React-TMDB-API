@@ -5,7 +5,7 @@ const moviesURL = import.meta.env.VITE_API
 
 const apiKey = import.meta.env.VITE_API_KEY
 
-const Popular = () => {
+const Exibindo = () => {
 
   const [topMovies, setTopMovies] = useState([])
 
@@ -26,14 +26,14 @@ const Popular = () => {
   }
 
   useEffect(()=>{
-    const topRatedUrl = `${moviesURL}popular?${apiKey}`
+    const topRatedUrl = `${moviesURL}now_playing?${apiKey}`
 
     getTopRatedMovies(topRatedUrl)
   },[])
 
   return (
     <div className="container">
-        <h2 className="title">Filmes populares:</h2>
+        <h2 className="title">Em exibição:</h2>
         <div className="movies-container">
         {topMovies.length>0 && topMovies.map((movie) => <MovieCard key={movie.id} movie={movie}/>)}
         </div>
@@ -42,4 +42,4 @@ const Popular = () => {
   )
 }
 
-export default Popular
+export default Exibindo

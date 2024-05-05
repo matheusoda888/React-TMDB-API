@@ -23,7 +23,15 @@ const Navbar = () => {
           
         </h2>
         <h2>
-          <Link to='/popular'><BiCameraMovie/>Filmes em exibição</Link>
+          <Link to='/popular'><BiCameraMovie/>Filmes Populares</Link>
+          
+        </h2>
+        <h2>
+          <Link to='/breve'><BiCameraMovie/>Em breve</Link>
+          
+        </h2>
+        <h2>
+          <Link to='/exibindo'><BiCameraMovie/>Em exibição</Link>
           
         </h2>
 

@@ -1,0 +1,35 @@
+.movie-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .tagline {
+    font-style: italic;
+    color: #666;
+  }
+  
+  .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .info h3 {
+    margin-right: 10px;
+  }
+  
+  .info p {
+    margin: 0;
+  }
+  
+  .description {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para ícones */
+  .info svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
