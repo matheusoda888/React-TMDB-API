@@ -60,10 +60,10 @@ const Movie = () => {
       </p>
     </div>
     <div className="info description">
-      <h3>
+      <p><h3>
         <BsFillFileEarmarkTextFill/> Descrição: 
       </h3>
-      <p>
+      
         {movie.overview}
       </p>
     </div>
